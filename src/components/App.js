@@ -1,4 +1,3 @@
-import { useEffect, useReducer } from "react";
 import Header from "./Header";
 import Main from "./Main";
 import Loader from "./Loader";
@@ -11,12 +10,9 @@ import FinishScreen from "./FinishScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
 import { useQuiz } from "../contexts/QuizContext";
-import { addingQuestions } from "../services/questionScript";
 
 export default function App() {
   const { status } = useQuiz();
-
-  // useEffect(addingQuestions, []);
 
   return (
     <div className="app">
